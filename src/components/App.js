@@ -15,6 +15,15 @@ class App extends Component {
         this.setState({ gifts });
     }
 
+    // we are passing id parameter to the removeGift function
+    removeGift = id => {
+        //creating a local copy of our gifts array in a state
+        const gifts = this.state.gifts.filter(gift => gift.id !== id);
+
+        //this.setState({gifts: gifts});
+        this.setState({ gifts });
+    }
+
     render() {
         return (
             <div>
