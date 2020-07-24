@@ -29,7 +29,7 @@ describe('App', () => {
         });
 
         it('adds a new gift to the rendered list', () => {
-            expect(app.find('.gift-list').children().length).toEqual(2);
+            expect(app.find('.gift-list').children().length).toEqual(1);
         });
     });
 });
