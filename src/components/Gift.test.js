@@ -14,7 +14,7 @@ describe('Gift', () => {
     });
 
     describe('when typing into the person input', () => {
-        const person = 'friend';
+        const person = 'Friend';
 
         beforeEach(() => {
             gift.find('.input-person').simulate('change', { target: { value: person } });

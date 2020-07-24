@@ -9,7 +9,17 @@ class Gift extends Component {
     }
     render() {
         return (
-            <div></div>
+            <div>
+                <Form>
+                    <FormGroup>
+                        <ControlLabel>Person</ControlLabel>
+                        <FormControl
+                            className='input-person'
+                            onChange={event => this.setState({ person: event.target.value })}
+                        />
+                    </FormGroup>
+                </Form>
+            </div>
         );
     }
 }
